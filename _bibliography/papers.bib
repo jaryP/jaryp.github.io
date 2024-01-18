@@ -1,0 +1,140 @@
+---
+---
+
+@article{pomponi2022centroids,
+  bibtex_show={true},
+  doi={https://github.com/jekyll/jekyll/issues/8259},
+  altmetric={true},
+  title={Centroids Matching: an efficient Continual Learning approach operating in the embedding space},
+  author={Pomponi, Jary and Scardapane, Simone and Uncini, Aurelio},
+  journal={Transactions on Machine Learning Research},
+  year={2022},
+  abstract={Catastrophic forgetting (CF) occurs when a neural network loses the information previously learned while training on a set of samples from a different distribution, i.e., a new task. Existing approaches have achieved remarkable results in mitigating CF, especially in a scenario called task incremental learning. However, this scenario is not realistic, and limited work has been done to achieve good results on more realistic scenarios. In this paper, we propose a novel regularization method called Centroids Matching, that, inspired by meta-learning approaches, fights CF by operating in the feature space produced by the neural network, achieving good results while requiring a small memory footprint. Specifically, the approach classifies the samples directly using the feature vectors produced by the neural network, by matching those vectors with the centroids representing the classes from the current task, or all the tasks up to that point. Centroids Matching is faster than competing baselines, and it can be exploited to efficiently mitigate CF, by preserving the distances between the embedding space produced by the model when past tasks were over, and the one currently produced, leading to a method that achieves high accuracy on all the tasks, without using an external memory when operating on easy scenarios, or using a small one for more realistic ones. Extensive experiments demonstrate that Centroids Matching achieves accuracy gains on multiple datasets and scenarios.},
+  selected={true}
+}
+
+@article{pomponi2023rearranging,
+bibtex_show={true},
+  title={Rearranging Pixels is a Powerful Black-Box Attack for RGB and Infrared Deep Learning Models},
+  author={Pomponi, Jary and D{\'a}ntoni, Daniele and Alessandro, Nicolosi and Scardapane, Simone},
+  journal={IEEE Access},
+  volume={11},
+  pages={11298--11306},
+  year={2023},
+  publisher={IEEE}, 
+  abstract={Recent research has found that neural networks for computer vision are vulnerable to several types of external attacks that modify the input of the model, with the malicious intent of producing a misclassification. With the increase in the number of feasible attacks, many defence approaches have been proposed to mitigate the effect of these attacks and protect the models. Mainly, the research on both attack and defence has focused on RGB images, while other domains, such as the infrared domain, are currently underexplored. In this paper, we propose two attacks, and we evaluate them on multiple datasets and neural network models, showing that the results outperform others established attacks, on both RGB as well as infrared domains. In addition, we show that our proposal can be used in an adversarial training protocol to produce more robust models, with respect to both adversarial attacks and natural …}
+}
+
+
+@article{pomponi2023continual,
+bibtex_show={true},
+  title={Continual learning with invertible generative models},
+  author={Pomponi, Jary and Scardapane, Simone and Uncini, Aurelio},
+  journal={Neural Networks},
+  volume={164},
+  pages={606--616},
+  year={2023},
+  publisher={Elsevier},
+  abstract={Catastrophic forgetting (CF) happens whenever a neural network overwrites past knowledge while being trained on new tasks. Common techniques to handle CF include regularization of the weights (using, e.g., their importance on past tasks), and rehearsal strategies, where the network is constantly re-trained on past data. Generative models have also been applied for the latter, in order to have endless sources of data. In this paper, we propose a novel method that combines the strengths of regularization and generative-based rehearsal approaches. Our generative model consists of a normalizing flow (NF), a probabilistic and invertible neural network, trained on the internal embeddings of the network. By keeping a single NF throughout the training process, we show that our memory overhead remains constant. In addition, exploiting the invertibility of the NF, we propose a simple approach to regularize the …}
+}
+
+
+@article{pomponi2021structured,
+bibtex_show={true},
+  title={Structured Ensembles: An approach to reduce the memory footprint of ensemble methods},
+  author={Pomponi, Jary and Scardapane, Simone and Uncini, Aurelio},
+  journal={Neural Networks},
+  volume={144},
+  pages={407--418},
+  year={2021},
+  publisher={Elsevier},
+  abstract={In this paper, we propose a novel ensembling technique for deep neural networks, which is able to drastically reduce the required memory compared to alternative approaches. In particular, we propose to extract multiple sub-networks from a single, untrained neural network by solving an end-to-end optimization task combining differentiable scaling over the original architecture, with multiple regularization terms favouring the diversity of the ensemble. Since our proposal aims to detect and extract sub-structures, we call it Structured Ensemble. On a large experimental evaluation, we show that our method can achieve higher or comparable accuracy to competing methods while requiring significantly less storage. In addition, we evaluate our ensembles in terms of predictive calibration and uncertainty, showing they compare favourably with the state-of-the-art. Finally, we draw a link with the continual learning literature …}
+}
+
+@article{pomponi2021probabilistic,
+bibtex_show={true},
+  title={A probabilistic re-intepretation of confidence scores in multi-exit models},
+  author={Pomponi, Jary and Scardapane, Simone and Uncini, Aurelio},
+  journal={Entropy},
+  volume={24},
+  number={1},
+  pages={1},
+  year={2021},
+  publisher={MDPI},
+  abstract={In this paper, we propose a new approach to train a deep neural network with multiple intermediate auxiliary classifiers, branching from it. These ‘multi-exits’ models can be used to reduce the inference time by performing early exit on the intermediate branches, if the confidence of the prediction is higher than a threshold. They rely on the assumption that not all the samples require the same amount of processing to yield a good prediction. In this paper, we propose a way to train jointly all the branches of a multi-exit model without hyper-parameters, by weighting the predictions from each branch with a trained confidence score. Each confidence score is an approximation of the real one produced by the branch, and it is calculated and regularized while training the rest of the model. We evaluate our proposal on a set of image classification benchmarks, using different neural models and early-exit stopping criteria.}
+}
+
+
+@article{pomponi2020pseudo,
+bibtex_show={true},
+  title={Pseudo-rehearsal for continual learning with normalizing flows},
+  author={Pomponi, Jary and Scardapane, Simone and Uncini, Aurelio},
+  journal={arXiv preprint arXiv:2007.02443},
+  year={2020},
+  abstract={Catastrophic forgetting (CF) happens whenever a neural network overwrites past knowledge while being trained on new tasks. Common techniques to handle CF include regularization of the weights (using, e.g., their importance on past tasks), and rehearsal strategies, where the network is constantly re-trained on past data. Generative models have also been applied for the latter, in order to have endless sources of data. In this paper, we propose a novel method that combines the strengths of regularization and generative-based rehearsal approaches. Our generative model consists of a normalizing flow (NF), a probabilistic and invertible neural network, trained on the internal embeddings of the network. By keeping a single NF conditioned on the task, we show that our memory overhead remains constant. In addition, exploiting the invertibility of the NF, we propose a simple approach to regularize the network's embeddings with respect to past tasks. We show that our method performs favorably with respect to state-of-the-art approaches in the literature, with bounded computational power and memory overheads.}
+}
+
+
+@INPROCEEDINGS{9892966,
+bibtex_show={true},
+  author={Pomponi, Jary and Scardapane, Simone and Uncini, Aurelio},
+  booktitle={2022 International Joint Conference on Neural Networks (IJCNN)}, 
+  title={Pixle: a fast and effective black-box attack based on rearranging pixels}, 
+  year={2022},
+  pages={1-7},
+  selected={true},
+  poster={pixle_poster.pdf},
+  doi={10.1109/IJCNN55064.2022.9892966},
+  abstract={Recent research has found that neural networks are vulnerable to several types of adversarial attacks, where the input samples are modified in such a way that the model produces a wrong prediction that misclassifies the adversarial sample. In this paper we focus on black-box adversarial attacks, that can be performed without knowing the inner structure of the attacked model, nor the training procedure, and we propose a novel attack that is capable of correctly attacking a high percentage of samples by rearranging a small number of pixels within the attacked image. We demonstrate that our attack works on a large number of datasets and models, that it requires a small number of iterations, and that the distance between the original sample and the adversarial one is negligible to the human eye.}}
+
+@article{pomponi2021bayesian,
+bibtex_show={true},
+
+  title={Bayesian neural networks with maximum mean discrepancy regularization},
+  author={Pomponi, Jary and Scardapane, Simone and Uncini, Aurelio},
+  journal={Neurocomputing},
+  volume={453},
+  pages={428--437},
+  year={2021},
+  publisher={Elsevier},
+  abstract={Bayesian Neural Networks (BNNs) are trained to optimize an entire distribution over their weights instead of a single set, having significant advantages in terms of, e.g., interpretability, multi-task learning, and calibration. Because of the intractability of the resulting optimization problem, most BNNs are either sampled through Monte Carlo methods, or trained by minimizing a suitable Evidence Lower BOund (ELBO) on a variational approximation. In this paper, we propose an optimized version of the latter, wherein we replace the Kullback–Leibler divergence in the ELBO term with a Maximum Mean Discrepancy (MMD) estimator, inspired by recent work in variational inference. After motivating our proposal based on the properties of the MMD term, we proceed to show a number of empirical advantages of the proposed formulation over the state-of-the-art. In particular, our BNNs achieve higher accuracy on multiple …}
+}
+
+
+@article{fanelli2020deeprich,
+bibtex_show={true},
+  title={DeepRICH: learning deeply Cherenkov detectors},
+  author={Fanelli, Cristiano and Pomponi, Jary},
+  journal={Machine Learning: Science and Technology},
+  volume={1},
+  number={1},
+  pages={015010},
+  year={2020},
+  publisher={IOP Publishing},
+  abstract={Imaging Cherenkov detectors are largely used for particle identification (PID) in nuclear and particle physics experiments, where developing fast reconstruction algorithms is becoming of paramount importance to allow for near real time calibration and data quality control, as well as to speed up offline analysis of large amount of data.}
+}
+
+
+@article{pomponi2020efficient,
+bibtex_show={true},
+  title={Efficient continual learning in neural networks with embedding regularization},
+  author={Pomponi, Jary and Scardapane, Simone and Lomonaco, Vincenzo and Uncini, Aurelio},
+  journal={Neurocomputing},
+  volume={397},
+  pages={139--148},
+  year={2020},
+  publisher={Elsevier},
+  abstract={Continual learning of deep neural networks is a key requirement for scaling them up to more complex applicative scenarios and for achieving real lifelong learning of these architectures. Previous approaches to the problem have considered either the progressive increase in the size of the networks, or have tried to regularize the network behavior to equalize it with respect to previously observed tasks. In the latter case, it is essential to understand what type of information best represents this past behavior. Common techniques include regularizing the past outputs, gradients, or individual weights. In this work, we propose a new, relatively simple and efficient method to perform continual learning by regularizing instead the network internal embeddings. To make the approach scalable, we also propose a dynamic sampling strategy to reduce the memory footprint of the required external storage. We show that our …}
+}
+
+@inproceedings{lomonaco2021avalanche,
+bibtex_show={true},
+  title={Avalanche: an end-to-end library for continual learning},
+  author={Lomonaco, Vincenzo and Pellegrini, Lorenzo and Cossu, Andrea and Carta, Antonio and Graffieti, Gabriele and Hayes, Tyler L and De Lange, Matthias and Masana, Marc and Pomponi, Jary and Van de Ven, Gido M and others},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+  pages={3600--3610},
+  year={2021},
+  selected={true},
+  abstract={Learning continually from non-stationary data streams is a long-standing goal and a challenging problem in machine learning. Recently, we have witnessed a renewed and fast-growing interest in continual learning, especially within the deep learning community. However, algorithmic solutions are often difficult to re-implement, evaluate and port across different settings, where even results on standard benchmarks are hard to reproduce. In this work, we propose Avalanche, an open-source end-to-end library for continual learning research based on PyTorch. Avalanche is designed to provide a shared and collaborative codebase for fast prototyping, training, and reproducible evaluation of continual learning algorithms.}
+}
+
