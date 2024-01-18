@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://jaryp.github.io/sitemap.xml
+Sitemap: www.jarypomponi.com/sitemap.xml
