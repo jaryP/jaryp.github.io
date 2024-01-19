@@ -2,13 +2,13 @@
 # Site settings Always try to keep a patch of sky above your life." {\enskip\cdotp\enskip} Marcel Proust
 # -----------------------------------------------------------------------------
 
-title: blank # the website title (if blank, full name will be used instead)
+title: Jary Pomponi # the website title (if blank, full name will be used instead)
 first_name: Jary
 middle_name: 
 last_name: Pomponi
 email: jary.pomponi@uniroma1.it
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  jary Pomponi research website
+  The research website of Jary Pomponi
 footer_text: >
   < Always try to keep a patch of  sky above your life>, Marcel Proust 
  # Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
@@ -117,7 +117,7 @@ google_analytics: G-3R8PQ58BDY # your Google Analytics measurement ID (format: G
 cronitor_analytics: # cronitor RUM analytics site ID (format: XXXXXXXXX)
 
 # For Google Search Console, see https://support.google.com/webmasters/answer/9008080?hl=en#meta_tag_verification&zippy=%2Chtml-tag
-google_site_verification: googleccade33694813e74 # your google-site-verification ID (Google Search Console)
+google_site_verification: googleaec57c2df1289f92 # your google-site-verification ID (Google Search Console)
 bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
