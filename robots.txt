@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: www.jarypomponi.com/sitemap.xml
+Sitemap: https://jarypomponi.com/sitemap.xml
