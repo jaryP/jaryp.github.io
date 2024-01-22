@@ -7,14 +7,13 @@ first_name: Jary
 middle_name: 
 last_name: Pomponi
 email: jary.pomponi@uniroma1.it
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  The research website of Jary Pomponi
+description: The research website of Jary Pomponi
 footer_text: >
   < Always try to keep a patch of  sky above your life>, Marcel Proust 
  # Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
  #  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
  #  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: jary pomponi, pomponi, jary, academic, researcher, research # add your own keywords or leave empty
+keywords: jary pomponi, pomponi, jary, academic, researcher, research, continual learning # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🇯 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -359,7 +358,7 @@ imagemagick:
 
 enable_google_analytics: true # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
-enable_google_verification: false # enables google site verification
+enable_google_verification: true # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_masonry: true # enables automatic project cards arrangement
 enable_math: true # enables math typesetting (uses MathJax)
