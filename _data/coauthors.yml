@@ -56,3 +56,21 @@
 'gambella':
   - firstname: ["Matteo"]
     url: https://www.deib.polimi.it/ita/personale/dettagli/1557698
+
+'minervini':
+- firstname: ["Pasquale"]
+  url: http://www.neuralnoise.com/publications/
+
+'devoto':
+- firstname: ["Alessio"]
+  url: https://alessiodevoto.github.io/
+
+'marsocci':
+- firstname: ["Valerio"]
+  url: https://sites.google.com/uniroma1.it/valeriomarsocci
+  
+'baiocchi':
+- firstname: ["Alessandro"]
+  url: https://phd.uniroma1.it/web/ALESSANDRO-BAIOCCHI_nP1743162_IT.aspx
+
+  
