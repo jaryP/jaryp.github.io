@@ -158,27 +158,29 @@ bibtex_show={true},
 }
 
 
-@misc{gambella2024nachos,
+@article{gambella2024nachos,
 bibtex_show={true},
   url={https://arxiv.org/abs/2401.13330},
   code={https://github.com/AI-Tech-Research-Lab/NAS},
   abstract={Early Exit Neural Networks (EENNs) endow astandard Deep Neural Network (DNN) with Early Exit Classifiers (EECs), to provide predictions at intermediate points of the processing when enough confidence in classification is achieved. This leads to many benefits in terms of effectiveness and efficiency. Currently, the design of EENNs is carried out manually by experts, a complex and time-consuming task that requires accounting for many aspects, including the correct placement, the thresholding, and the computational overhead of the EECs. For this reason, the research is exploring the use of Neural Architecture Search (NAS) to automatize the design of EENNs. Currently, few comprehensive NAS solutions for EENNs have been proposed in the literature, and a fully automated, joint design strategy taking into consideration both the backbone and the EECs remains an open problem. To this end, this work presents Neural Architecture Search for Hardware Constrained Early Exit Neural Networks (NACHOS), the first NAS framework for the design of optimal EENNs satisfying constraints on the accuracy and the number of Multiply and Accumulate (MAC) operations performed by the EENNs at inference time. In particular, this provides the joint design of backbone and EECs to select a set of admissible (i.e., respecting the constraints) Pareto Optimal Solutions in terms of best tradeoff between the accuracy and number of MACs. The results show that the models designed by NACHOS are competitive with the state-of-the-art EENNs. Additionally, this work investigates the effectiveness of two novel regularization terms designed for the optimization of the auxiliary classifiers of the EENN},
     title={NACHOS: Neural Architecture Search for Hardware Constrained Early Exit Neural Networks},
     author={Matteo Gambella and Jary Pomponi and Simone Scardapane and Manuel Roveri},
-    year={2024},
+    year={2025},
+    journal={IEEE Transactions on Neural Networks and Learning Systems (Under Review)},   
     eprint={2401.13330},
     archivePrefix={arXiv},
     primaryClass={cs.LG}
 }
 
-@misc{pomponi2024cascaded,
-bibtex_show={true},
+@article{pomponi2024cascaded,
+  bibtex_show={true},
   url={https://arxiv.org/abs/2402.01262},
   abstract={Humans are capable of acquiring new knowledge and transferring learned knowledge into different domains, incurring a small forgetting. The same ability, called Continual Learning, is challenging to achieve when operating with neural networks due to the forgetting affecting past learned tasks when learning new ones. This forgetting can be mitigated by replaying stored samples from past tasks, but a large memory size may be needed for long sequences of tasks; moreover, this could lead to overfitting on saved samples. In this paper, we propose a novel regularisation approach and a novel incremental classifier called, respectively, Margin Dampening and Cascaded Scaling Classifier. The first combines a soft constraint and a knowledge distillation approach to preserve past learned knowledge while allowing the model to learn new patterns effectively. The latter is a gated incremental classifier, helping the model modify past predictions without directly interfering with them. This is achieved by modifying the output of the model with auxiliary scaling functions. We empirically show that our approach performs well on multiple benchmarks against well-established baselines, and we also study each component of our proposal and how the combinations of such components affect the final results.},
   code={https://github.com/jaryP/CIL-Margin-Dampening-Gated-Classifier},
+    journal={Neurocomputing}, 
     title={Class incremental learning with probability dampening and cascaded gated classifier},
     author={Jary Pomponi and Alessio Devoto and Simone Scardapane},
-    year={2024},
+    year={2025},
     selected={true},
     eprint={2402.01262},
     archivePrefix={arXiv},
@@ -227,3 +229,16 @@ bibtex_show={true},
   bibtex_show={true},
   abstract={Early exits are an important efficiency mechanism integrated into deep neural networks that allows for the termination of the network's forward pass before processing through all its layers. By allowing early halting of the inference process for less complex inputs that reached high confidence, early exits significantly reduce the amount of computation required. Early exit methods add trainable internal classifiers which leads to more intricacy in the training process. However, there is no consistent verification of the approaches of training of early exit methods, and no unified scheme of training such models. Most early exit methods employ a training strategy that either simultaneously trains the backbone network and the exit heads or trains the exit heads separately. We propose a training approach where the backbone is initially trained on its own, followed by a phase where both the backbone and the exit heads are trained together. Thus, we advocate for organizing early-exit training strategies into three distinct categories, and then validate them for their performance and efficiency. In this benchmark, we perform both theoretical and empirical analysis of early-exit training regimes. We study the methods in terms of information flow, loss landscape and numerical rank of activations and gauge the suitability of regimes for various architectures and datasets.}
 }
+
+@INPROCEEDINGS{10942792,
+bibtex_show={true},
+  url={https://ieeexplore.ieee.org/document/10942792},
+  abstract={This paper presents a novel framework for goal-oriented semantic communications leveraging recursive early exit models. The proposed approach is built on two key components. First, we introduce an innovative early exit strategy that dynamically partitions computations, enabling samples to be offloaded to a server based on layer-wise recursive prediction dynamics that detect samples for which the confidence is not increasing fast enough over layers. Second, we develop a Rein-forcement Learning-based online optimization framework that jointly determines early exit points, computation splitting, and offloading strategies, while accounting for wireless conditions, inference accuracy, and resource costs. Numerical evaluations in an edge inference scenario demonstrate the method's adaptability and effectiveness in striking an excellent trade-off between performance, latency, and resource efficiency.},
+  author={Pomponi, Jary and Merluzzi, Mattia and Devoto, Alessio and Mota, Mateus Pontes and Di Lorenzo, Paolo and Scardapane, Simone},
+  booktitle={2024 58th Asilomar Conference on Signals, Systems, and Computers}, 
+  title={Goal-Oriented Communications Based on Recursive Early Exit Neural Networks}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={378-382},
+  doi={10.1109/IEEECONF60004.2024.10942792}}
